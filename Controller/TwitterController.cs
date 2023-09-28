@@ -17,10 +17,10 @@ namespace TwitterXScheduler.Controller
         [HttpPost]
 
         public async Task<IActionResult> PostTweet(PostTweetDto postTweet){
-            var client = new TwitterClient("0pc8cLqD6vWfXL05pbzvYgERP",
-            "Ybg2E4pMlW77LqIdqvhBdPflYJDI2VbCQsQM2zI9h4R5YVXnCT",
-            "1707113308724117504-mqK1wTqBjHvQXhrl04R3EgARD3mVdY",
-            "5wdP2icRQZF1iINC3kYTZUfiqZsnFpzp4hMVX75cPCysO");
+            var client = new TwitterClient("e8ElaTbiw958oupDNSM4gvjsW",
+            "CT6rRcsNLqI7DhqoejxdK1KMvdrLhMzxOh44fAuKndgnH018uz",
+            "1707113308724117504-w04Ly4hPmGudxWosq0SBOyulcAV2pg",
+            "XHGiHFjJljGzNeEKLgfS4zgySCe6dxSFprTfaVs9dOx6W");
 
             var result = await client.Execute.AdvanceRequestAsync(BuildTwitterRequest(postTweet,client));
             return Ok(result.Content);

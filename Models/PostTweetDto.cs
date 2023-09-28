@@ -7,7 +7,7 @@ namespace TwitterXScheduler.Models
 {
     public class PostTweetDto
     {
-        public string tweetText {get; set;} 
+        public string? text {get; set;} 
 
     }
 }
